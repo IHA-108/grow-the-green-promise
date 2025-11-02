@@ -62,21 +62,36 @@ const Index = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-display font-bold text-white mb-6 animate-fade-in-up text-balance">
-            World Hemp Day
+            World Hemp Day — April 21, 2026
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto animate-fade-in-up text-balance" style={{ animationDelay: '0.2s' }}>
-            A Global Call for Climate Action Through Nature's Most Sustainable Crop
+          <p className="text-xl md:text-2xl text-white/90 mb-4 max-w-3xl mx-auto animate-fade-in-up text-balance" style={{ animationDelay: '0.2s' }}>
+            A global call to restore balance between people, planet, and prosperity — through one extraordinary plant.
           </p>
           
-          <Button 
-            onClick={scrollToPetition}
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow transition-smooth text-lg px-8 py-6 animate-scale-in"
-            style={{ animationDelay: '0.4s' }}
-          >
-            👉 Sign the Global Petition
-          </Button>
+          <div className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto space-y-2 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <p>For 10,000 years, hemp sustained humanity.</p>
+            <p>Then we forgot its power.</p>
+            <p>Now, as our planet faces its greatest challenge, hemp returns as a natural climate ally — capturing carbon, healing soil, and creating sustainable livelihoods.</p>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-scale-in" style={{ animationDelay: '0.5s' }}>
+            <Button 
+              onClick={scrollToPetition}
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow transition-smooth text-lg px-8 py-6"
+            >
+              Sign the Global Petition
+            </Button>
+            <Button 
+              onClick={() => document.getElementById('why-hemp')?.scrollIntoView({ behavior: 'smooth' })}
+              size="lg"
+              variant="outline"
+              className="border-white/30 text-white hover:bg-white/10 transition-smooth text-lg px-8 py-6"
+            >
+              Learn How Hemp Helps
+            </Button>
+          </div>
           
           <div className="mt-12 animate-float">
             <Sprout className="mx-auto h-12 w-12 text-accent" />
@@ -100,14 +115,12 @@ const Index = () => {
               </div>
               
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-4">
-                We, global citizens, farmers, researchers, and innovators, urge the United Nations to declare 
-                <strong className="text-foreground"> April 21st as World Hemp Day</strong> — a symbol of sustainability, 
-                innovation, and climate action.
+                We, citizens, researchers, and innovators, call upon the United Nations to declare 
+                <strong className="text-foreground"> April 21st as World Hemp Day</strong> — recognizing hemp as a nature-based solution to fight climate change and build resilient economies.
               </p>
               
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                This resolution calls for recognition of industrial hemp as a nature-based solution contributing 
-                directly to the UN Sustainable Development Goals (SDGs).
+              <p className="text-xs text-muted-foreground/60 max-w-3xl mx-auto">
+                Your information is secure and never shared.
               </p>
             </div>
             
@@ -117,36 +130,40 @@ const Index = () => {
       </section>
 
       {/* Why Hemp Section */}
-      <section className="py-20 bg-background">
+      <section id="why-hemp" className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 animate-fade-in">
-            🌿 Why Hemp? The Climate Champion Crop
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-6 animate-fade-in">
+            How Hemp Heals the Planet
           </h2>
+          
+          <p className="text-xl text-muted-foreground text-center mb-16 max-w-3xl mx-auto">
+            Hemp is one of nature's most powerful tools for climate recovery and green innovation.
+          </p>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
               {
                 icon: CloudRain,
-                title: "CO₂ Champion",
-                description: "Absorbs 8–15 tons of CO₂ per hectare – more than forests.",
+                title: "Captures Carbon",
+                description: "One hectare absorbs 8–15 tons of CO₂ per harvest — more than a forest.",
                 delay: "0s"
               },
               {
-                icon: Zap,
-                title: "Rapid Growth",
-                description: "Grows in 100 days, restoring soil and reducing pesticide use.",
+                icon: Trees,
+                title: "Restores Soil",
+                description: "Deep roots clean, aerate, and regenerate degraded land.",
                 delay: "0.1s"
               },
               {
-                icon: Factory,
-                title: "25,000+ Products",
-                description: "Transforms into eco-products – textiles, paper, bioplastics, and clean fuel.",
+                icon: Leaf,
+                title: "Saves Water",
+                description: "Needs minimal irrigation and no pesticides.",
                 delay: "0.2s"
               },
               {
-                icon: Users,
-                title: "Economic Revival",
-                description: "Revives rural economies through sustainable green jobs.",
+                icon: Building2,
+                title: "Replaces Plastics & Concrete",
+                description: "Hemp becomes biodegradable packaging and carbon-negative building material.",
                 delay: "0.3s"
               }
             ].map((item, index) => (
@@ -176,63 +193,49 @@ const Index = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 animate-fade-in">
-            ⚙️ Aligned with the UN Sustainable Development Goals
+            How Hemp Aligns with the United Nations Sustainable Development Goals
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="space-y-8">
-              {[
-                { icon: Target, number: 2, color: "text-yellow-600" },
-                { icon: Zap, number: 7, color: "text-yellow-500" },
-                { icon: Building2, number: 11, color: "text-orange-500" },
-                { icon: Globe, number: 13, color: "text-green-600" },
-                { icon: Trees, number: 15, color: "text-green-700" }
-              ].map((item, index) => (
-                <div key={index} className="flex items-center gap-4 animate-slide-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <div className={`p-4 bg-accent/10 rounded-full ${item.color}`}>
-                    <item.icon className="h-8 w-8" />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {[
+              { number: 1, title: "No Poverty", description: "Creates green jobs and new rural industries." },
+              { number: 2, title: "Zero Hunger", description: "Hemp seeds are a complete plant protein." },
+              { number: 3, title: "Good Health & Well-being", description: "Supports nutrition and wellness." },
+              { number: 4, title: "Quality Education", description: "Drives sustainability research and green curricula." },
+              { number: 5, title: "Gender Equality", description: "Empowers women in farming and entrepreneurship." },
+              { number: 6, title: "Clean Water", description: "Uses 75% less water than cotton; no harmful runoff." },
+              { number: 7, title: "Clean Energy", description: "Converts into biofuels and sustainable aviation fuel." },
+              { number: 8, title: "Decent Work & Growth", description: "Builds new green economies." },
+              { number: 9, title: "Industry & Innovation", description: "Enables bioplastics and carbon-smart materials." },
+              { number: 10, title: "Reduced Inequalities", description: "Accessible to small and developing farmers." },
+              { number: 11, title: "Sustainable Cities", description: "Hempcrete = carbon-negative construction." },
+              { number: 12, title: "Responsible Consumption", description: "Fully biodegradable and recyclable." },
+              { number: 13, title: "Climate Action", description: "World's most efficient CO₂-capturing crop." },
+              { number: 14, title: "Life Below Water", description: "Prevents pollution through low-input farming." },
+              { number: 15, title: "Life on Land", description: "Restores soil health and biodiversity." },
+              { number: 16, title: "Peace & Institutions", description: "Encourages transparent, sustainable policies." },
+              { number: 17, title: "Partnerships for Goals", description: "Bridges science, farmers, and global collaboration." }
+            ].map((item, index) => (
+              <Card 
+                key={index} 
+                className="shadow-soft hover:shadow-glow transition-smooth animate-fade-in border-border/50"
+                style={{ animationDelay: `${index * 0.05}s` }}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4 mb-3">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
+                      <span className="text-xl font-bold text-accent">{item.number}</span>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-sm font-semibold text-foreground mb-1">
+                        SDG {item.number} – {item.title}
+                      </h3>
+                    </div>
                   </div>
-                  <div className="text-3xl font-bold text-foreground">SDG {item.number}</div>
-                </div>
-              ))}
-            </div>
-            
-            <div className="space-y-6">
-              {[
-                { 
-                  title: "SDG 2 – Zero Hunger", 
-                  description: "Hemp seeds = plant-based superfood rich in protein and omega fatty acids",
-                  delay: "0s"
-                },
-                { 
-                  title: "SDG 7 – Clean Energy", 
-                  description: "Biofuel & sustainable aviation fuel from hemp biomass",
-                  delay: "0.1s"
-                },
-                { 
-                  title: "SDG 11 – Sustainable Cities", 
-                  description: "Carbon-negative hempcrete for green construction",
-                  delay: "0.2s"
-                },
-                { 
-                  title: "SDG 13 – Climate Action", 
-                  description: "Top CO₂ absorber crop fighting climate change",
-                  delay: "0.3s"
-                },
-                { 
-                  title: "SDG 15 – Life on Land", 
-                  description: "Soil restoration and biodiversity enhancement",
-                  delay: "0.4s"
-                }
-              ].map((item, index) => (
-                <Card key={index} className="shadow-soft animate-fade-in" style={{ animationDelay: item.delay }}>
-                  <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-2 text-foreground">{item.title}</h3>
-                    <p className="text-muted-foreground">{item.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -241,7 +244,7 @@ const Index = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 animate-fade-in">
-            🕰 From Ancient Crop to Modern Climate Solution
+            From Ancient Roots to Modern Climate Solution
           </h2>
           
           <div className="max-w-4xl mx-auto">
@@ -251,7 +254,7 @@ const Index = () => {
                 { year: "1619 CE", text: "Hemp mandated by law in early America", icon: Leaf },
                 { year: "1937", text: "Banned under Marijuana Tax Act", icon: Target },
                 { year: "2018", text: "Legal revival and green economy boom", icon: Factory },
-                { year: "2026", text: "Call for World Hemp Day at the United Nations", icon: Globe }
+                { year: "2026", text: "Proposed UN recognition — World Hemp Day", icon: Globe }
               ].map((item, index) => (
                 <div 
                   key={index} 
@@ -279,18 +282,18 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-12">
-              💚 A Vision Rooted in Sustainability
+              Grow Prosperity, Not Pollution
             </h2>
             
             <div className="space-y-6 text-xl text-muted-foreground">
               <p className="font-display text-2xl text-foreground italic">
-                A world that grows prosperity, not pollution.
+                World Hemp Day is more than a date — it's a declaration that sustainability is achievable through unity, science, and soil.
               </p>
               <p className="font-display text-2xl text-foreground italic">
-                A day that honors innovation grounded in nature.
+                By celebrating hemp, we honor ancient wisdom and ignite modern innovation.
               </p>
               <p className="font-display text-2xl text-foreground italic">
-                A reminder that the solutions to our climate crisis are ancient — and growing again.
+                Let's make this a day the world grows together.
               </p>
             </div>
           </div>
@@ -302,7 +305,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-              📢 Your Voice Matters
+              Your Voice Matters
             </h2>
             
             <p className="text-xl text-muted-foreground mb-8">
@@ -316,7 +319,7 @@ const Index = () => {
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow transition-smooth text-lg px-8"
               >
-                👉 Sign the Petition Now
+                Sign the Petition
               </Button>
               
               <Button 
@@ -326,7 +329,7 @@ const Index = () => {
                 onClick={() => {}}
               >
                 <Share2 className="mr-2 h-5 w-5" />
-                Share This Movement
+                Share the Movement 🌍
               </Button>
             </div>
             
@@ -374,11 +377,11 @@ const Index = () => {
             </div>
             
             <p className="text-sm text-primary-foreground/80">
-              In partnership with global hemp advocates and sustainability researchers.
+              A non-political global citizens' movement supporting the UN Sustainable Development Goals.
             </p>
             
             <p className="text-xs text-primary-foreground/60">
-              © 2026 World Hemp Day Initiative. Building a sustainable future, one signature at a time.
+              © 2026 World Hemp Day Initiative
             </p>
           </div>
         </div>

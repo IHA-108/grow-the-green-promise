@@ -92,7 +92,7 @@ export const PetitionForm = () => {
             Signing...
           </>
         ) : (
-          "Sign Now"
+          "Sign Now — Add Your Voice"
         )}
       </Button>
     </form>
