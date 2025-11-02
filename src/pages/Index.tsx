@@ -105,7 +105,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 animate-fade-in">
               <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-foreground">
-                📝 Sign the Global Petition
+                What We Ask — Sign the Petition
               </h2>
               
               <div className="inline-block mb-8 px-6 py-3 bg-accent/10 rounded-full border border-accent/30">
@@ -114,9 +114,25 @@ const Index = () => {
                 </p>
               </div>
               
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-4">
-                We, citizens, researchers, and innovators, call upon the United Nations to declare 
-                <strong className="text-foreground"> April 21st as World Hemp Day</strong> — recognizing hemp as a nature-based solution to fight climate change and build resilient economies.
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-6">
+                We call on UN Member States to sponsor a General Assembly resolution declaring <strong className="text-foreground">April 21 as World Hemp Day</strong> to accelerate hemp research, harmonize regulation, and unlock its climate and socio-economic benefits.
+              </p>
+              
+              <div className="text-left max-w-3xl mx-auto mb-6 p-6 bg-accent/5 rounded-lg border border-accent/20">
+                <p className="text-base text-muted-foreground mb-3">
+                  <strong className="text-foreground">To:</strong> Ambassadors & Permanent Missions of UN Member States
+                </p>
+                <p className="text-base text-muted-foreground">
+                  We urge your government to sponsor and support a UN General Assembly Resolution declaring April 21 as World Hemp Day, recognizing industrial hemp as a nature-based solution to climate change and a driver of sustainable livelihoods and industry.
+                </p>
+              </div>
+              
+              <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-3">
+                <strong className="text-foreground">Why April 21?</strong> It sits before Earth Day (April 22) to shift the global conversation toward solutions and regenerative industry.
+              </p>
+              
+              <p className="text-lg font-medium text-foreground max-w-3xl mx-auto mb-4">
+                Every signature is a seed — plant yours today.
               </p>
               
               <p className="text-xs text-muted-foreground/60 max-w-3xl mx-auto">
