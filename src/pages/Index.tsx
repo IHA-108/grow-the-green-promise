@@ -87,7 +87,7 @@ const Index = () => {
               onClick={() => document.getElementById('why-hemp')?.scrollIntoView({ behavior: 'smooth' })}
               size="lg"
               variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 transition-smooth text-lg px-8 py-6"
+              className="bg-transparent border-white/50 text-white hover:bg-white/20 hover:border-white transition-smooth text-lg px-8 py-6"
             >
               Learn How Hemp Helps
             </Button>
