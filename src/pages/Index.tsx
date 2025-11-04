@@ -209,13 +209,13 @@ const Index = () => {
       </section>
 
       {/* UN SDGs Section */}
-      <section className="py-20 bg-card">
+      <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-center mb-16 animate-fade-in">
-            How Hemp Aligns with the United Nations Sustainable Development Goals
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-12 animate-fade-in">
+            Hemp Supports All 17 UN Sustainable Development Goals
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
             {[
               { number: 1, title: "No Poverty", description: "Creates green jobs and new rural industries." },
               { number: 2, title: "Zero Hunger", description: "Hemp seeds are a complete plant protein." },
@@ -240,18 +240,18 @@ const Index = () => {
                 className="shadow-soft hover:shadow-glow transition-smooth animate-fade-in border-border/50"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4 mb-3">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                      <span className="text-xl font-bold text-accent">{item.number}</span>
+                <CardContent className="p-4">
+                  <div className="flex items-start gap-3 mb-2">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center">
+                      <span className="text-sm font-bold text-accent">{item.number}</span>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-sm font-semibold text-foreground mb-1">
-                        SDG {item.number} – {item.title}
+                      <h3 className="text-xs font-semibold text-foreground leading-tight">
+                        {item.title}
                       </h3>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-xs text-muted-foreground leading-snug">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
