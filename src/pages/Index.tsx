@@ -108,9 +108,12 @@ const Index = () => {
                 What We Ask — Sign the Petition
               </h2>
               
-              <div className="inline-block mb-8 px-6 py-3 bg-accent/10 rounded-full border border-accent/30">
-                <p className="text-2xl font-semibold text-accent">
-                  {signatureCount.toLocaleString()} people have already signed
+              <div className="inline-block mb-8 px-8 py-4 bg-accent/20 rounded-full border-2 border-accent shadow-glow animate-scale-in">
+                <p className="text-3xl md:text-4xl font-bold text-accent animate-pulse">
+                  {signatureCount.toLocaleString()}
+                </p>
+                <p className="text-sm md:text-base text-accent/80 font-medium mt-1">
+                  people have already signed
                 </p>
               </div>
               
