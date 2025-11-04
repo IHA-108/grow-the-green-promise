@@ -14,12 +14,16 @@ import {
   CloudRain,
   Trees,
   Share2,
-  Mail
+  Mail,
+  Calendar
 } from "lucide-react";
+import { differenceInDays } from "date-fns";
 import heroImage from "@/assets/hero-hemp-earth.jpg";
 
 const Index = () => {
   const [signatureCount, setSignatureCount] = useState(12538);
+  const targetDate = new Date('2026-04-21');
+  const daysRemaining = differenceInDays(targetDate, new Date());
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -144,6 +148,20 @@ const Index = () => {
             </div>
             
             <PetitionForm />
+            
+            <div className="mt-12 text-center animate-fade-in">
+              <div className="inline-flex items-center gap-4 px-8 py-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border-2 border-accent/30 shadow-glow">
+                <Calendar className="h-8 w-8 text-accent" />
+                <div>
+                  <p className="text-4xl md:text-5xl font-bold text-accent mb-1">
+                    {daysRemaining}
+                  </p>
+                  <p className="text-sm md:text-base text-muted-foreground font-medium">
+                    days until World Hemp Day
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
