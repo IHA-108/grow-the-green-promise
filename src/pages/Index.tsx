@@ -149,7 +149,21 @@ const Index = () => {
             
             <PetitionForm />
             
-            <div className="mt-12 text-center animate-fade-in">
+            <div className="flex flex-col items-center gap-4">
+  <Button
+    size="lg"
+    className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow transition-smooth text-lg px-10 py-6"
+    onClick={() => window.open(GOOGLE_FORM_URL, "_blank")}
+  >
+    Sign the Global Petition 🌱
+  </Button>
+
+  <p className="text-xs text-muted-foreground">
+    You’ll be redirected to our official petition form.
+  </p>
+</div>
+
+
               <div className="inline-flex items-center gap-4 px-8 py-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border-2 border-accent/30 shadow-glow">
                 <Calendar className="h-8 w-8 text-accent" />
                 <div>
