@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { PetitionForm } from "@/components/PetitionForm";
+
 import { 
   Sprout, 
   Globe, 
@@ -147,7 +147,7 @@ const Index = () => {
               </p>
             </div>
             
-            <PetitionForm />
+            
             
             <div className="flex flex-col items-center gap-4">
   <Button
