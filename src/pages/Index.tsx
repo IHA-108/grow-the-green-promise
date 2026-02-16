@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-// other imports...
+import { Card, CardContent } from "@/components/ui/card"
 
 const GOOGLE_FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSc-UOxjV9si8lEt3TrTE0cnd_hgxjtP9Qp9NNVTczedV6MXRA/viewform";
